@@ -14,10 +14,10 @@ function execucao(req, res){
     //definindo o tipo de conteudo da resposta para json
     res.setHeader('Content-Type', 'application/json');
 
-    //enviando o conteudo que tinha no router 
+    //enviando o conteudo que tinha no router
     res.end(
         //pedindo ao router qual conteudo acessar
-        router(req.url)
+        JSON.stringify(router(req.url))
     );
 }
 

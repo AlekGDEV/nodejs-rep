@@ -1,6 +1,15 @@
 module.exports = {
     listar: () => {
-        return 'Listar cliente';
+        return [
+            {
+                id:1,
+                nome:'Chuchu'
+            },
+            {
+                id:2,
+                nome:'Cachorro'
+            }
+        ];
     },
 
     cadastrar: () => {
