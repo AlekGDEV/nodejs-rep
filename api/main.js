@@ -16,17 +16,11 @@ function execucao(req, res){
     //definindo o tipo de conteudo da resposta para json
     res.setHeader('Content-Type', 'application/json');
 
-
-    if(req.url === '/teste'){
-        res.end('Teste');
-        return;
-    }
-    if(req.url === '/cliente'){
-        res.end('Clientes');
-        return;
-    }
-
-    res.end('erro 404');
+    //enviando o conteudo que tinha no router 
+    res.end(
+        //pedindo ao router qual conteudo acessar
+        router(req.url)
+    );
 }
 
 //criando o servidor e definindo a função que será executada

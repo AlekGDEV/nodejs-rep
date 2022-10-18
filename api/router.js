@@ -1,4 +1,4 @@
-module.exports = () => {
+module.exports = (url) => {
     if(url === '/cliente'){
         return 'Listar clientes'
     }
