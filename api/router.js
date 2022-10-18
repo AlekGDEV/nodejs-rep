@@ -1,10 +1,13 @@
+const produto = require('./acoes/produto');
+const cliente = require('./acoes/client');
+
 module.exports = (url) => {
     if(url === '/cliente'){
-        return 'Listar clientes'
+        return cliente.listar();
     }
 
     if(url === '/produtos'){
-        return 'Listar produtos'
+        return produto.listar();
     }
 
     return 'Error 404';

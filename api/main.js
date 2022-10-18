@@ -1,7 +1,5 @@
 const http = require('http');
 
-const produto = require('./acoes/produto');
-const cliente = require('./acoes/client');
 const router = require('./router')
 
 
